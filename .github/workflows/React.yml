@@ -21,11 +21,11 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: Install Nodejs
+    - name: install Nodejs
       uses: actions/setup-node@v2-beta
       with:
        node-version: 12
-    - name: instaall yarn
+    - name: install yarn
       uses: borales/actions-yarn@v2.0.0
       with:
        cmd: install # will run `yarn install` command
